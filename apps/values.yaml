@@ -1,0 +1,21 @@
+services:
+  traefik:
+    name: ingress
+    namespace: ingress
+    path: traefik
+    repoURL: https://github.com/udhayd/argocd-apps
+    targetRevision: master
+
+  argocd:
+    name: argocd
+    namespace: argocd
+    path: argocd
+    repoURL: https://github.com/udhayd/argocd-apps
+    targetRevision: master
+
+  services:
+    name: services
+    namespace: services
+    path: apps
+    repoURL: https://github.com/udhayd/argocd-apps
+    targetRevision: master

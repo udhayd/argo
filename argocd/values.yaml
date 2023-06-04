@@ -1,0 +1,10 @@
+argocd:
+
+  server:
+    ingress:
+      enabled: true
+      hosts:
+      - argocd.groofy.cloud
+
+    extraArgs:
+    - --insecure
