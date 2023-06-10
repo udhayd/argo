@@ -25,4 +25,6 @@ traefik:
     websecure:
       nodePort: 32443
       tls:
-        enabled: true
+      
+  service:
+    type: ClusterIP
