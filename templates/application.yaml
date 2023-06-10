@@ -16,4 +16,8 @@ spec:
     path: "{{ $v.path }}"
     repoURL: "{{ $v.repoURL }}"
     targetRevision: "{{ $v.targetRevision }}"
+  {{- if eq (toString $v.autosync) "true" }} 
+  syncPolicy:
+    automated: {}
+  {{- end }}
 {{- end }}

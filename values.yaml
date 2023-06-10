@@ -2,6 +2,7 @@ services:
   traefik:
     name: ingress
     namespace: ingress
+    autosync: false
     path: traefik
     repoURL: https://github.com/udhayd/argocd-apps
     targetRevision: master
@@ -9,6 +10,7 @@ services:
   argocd:
     name: argocd
     namespace: argocd
+    autosync: true
     path: argocd
     repoURL: https://github.com/udhayd/argocd-apps
     targetRevision: master
@@ -16,6 +18,7 @@ services:
   services:
     name: services
     namespace: services
-    path: apps
+    autosync: true
+    path: . 
     repoURL: https://github.com/udhayd/argocd-apps
     targetRevision: master
