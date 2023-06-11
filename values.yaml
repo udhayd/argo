@@ -2,7 +2,7 @@ services:
   traefik:
     name: ingress
     namespace: ingress
-    autosync: false
+    autosync: true
     path: traefik
     repoURL: https://github.com/udhayd/argocd-apps
     targetRevision: master
