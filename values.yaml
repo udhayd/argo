@@ -5,7 +5,7 @@ services:
     autosync: true
     path: kubernetes-manifests
     repoURL: https://github.com/GoogleCloudPlatform/microservices-demo
-    targetRevision: master
+    targetRevision: main
 
   services:
     name: services
