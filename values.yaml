@@ -7,14 +7,6 @@ services:
     repoURL: https://github.com/GoogleCloudPlatform/microservices-demo
     targetRevision: master
 
-  argocd:
-    name: argocd
-    namespace: argocd
-    autosync: true
-    path: argocd
-    repoURL: https://github.com/udhayd/argocd-apps
-    targetRevision: master
-
   services:
     name: services
     namespace: services
