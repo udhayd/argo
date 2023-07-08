@@ -3,7 +3,7 @@ services:
     name: gapp
     namespace: gapp
     autosync: true
-    path: kubernetes-manifests
+    path: release
     repoURL: https://github.com/GoogleCloudPlatform/microservices-demo
     targetRevision: main
 
