@@ -1,10 +1,10 @@
 services:
-  traefik:
-    name: ingress
-    namespace: ingress
+  gapp:
+    name: gapp
+    namespace: gapp
     autosync: true
-    path: traefik
-    repoURL: https://github.com/udhayd/argocd-apps
+    path: kubernetes-manifests
+    repoURL: https://github.com/GoogleCloudPlatform/microservices-demo
     targetRevision: master
 
   argocd:
@@ -21,4 +21,4 @@ services:
     autosync: true
     path: . 
     repoURL: https://github.com/udhayd/argocd-apps
-    targetRevision: master
+    targetRevision: feature
